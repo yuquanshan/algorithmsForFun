@@ -12,7 +12,7 @@ public class SearchInSortedArray{
 				return -1;
 			}
 		}else{
-			int mid = (end - start)/2;
+			int mid = start+(end - start)/2;
 			if (elem == array[mid]) {
 				return mid;
 			}else if (elem > array[mid]){
@@ -23,8 +23,8 @@ public class SearchInSortedArray{
 		}
 	}
 	public static void main(String[] args) {
-		int[] a = {1,3,5,7,9};
-		int ind = findItRange(a, 1, 0, a.length);
+		int[] a = {1,3,5,7};
+		int ind = findItRange(a, 7, 0, a.length-1);
 		if (ind != -1) {
 			System.out.println("The index of 1 is " + new Integer(ind).toString()+".");
 		}else{

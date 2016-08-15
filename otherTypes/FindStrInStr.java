@@ -1,4 +1,4 @@
-/*
+/**
 find target string(arg[0]) from source string(arg[1])
 return first position if found o.w. return -1.
 */

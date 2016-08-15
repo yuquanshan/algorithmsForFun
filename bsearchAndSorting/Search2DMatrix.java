@@ -22,34 +22,50 @@ public class Search2DMatrix{
 			int up = 0;
 			int down = d1-1;
 			int mid = 0;
-			while(down != up){	
-				mid = (down+up)/2;
+			while(down - up > 1){	
+				mid = up+(down-up)/2;
 				if (matrix[mid][0]>elem){
-					down = mid-1;
+					down = mid;
 				}else{
 					up = mid;
 				}
 			}
-			int ind = SearchInSortedArray.findItRange(matrix[up],elem,0,matrix[0].length);
-			if (ind == -1)
-				return new Tuple(false, 0, 0);
-			else{
-				return new Tuple(true, up, ind);
+			int mm = up;
+			if(matrix[down][0]<=elem){
+			    mm = down;
 			}
+			int start = 0;
+			int end = matrix[up].length-1;
+			while(end-start > 1){
+			    int m = start + (end-start)/2;
+			    if (matrix[mm][m] == elem){
+			        return new Tuple(true,up,m);
+			    }else if(matrix[mm][m]<elem){
+			        start = m+1;
+			    }else{
+			        end = m;
+			    }
+			}
+			if(matrix[mm][start] == elem){
+				return new Tuple(true,mm,start);
+			}else if(matrix[mm][end] == elem)
+				return new Tuple(true,mm,end);
+			else
+				return new Tuple(false,-1,-1);
 		}
 	}
 
 	public static void main(String[] args) {
 		int[][] m = {
-			{1,2,3,4,5},
-			{6,7,8,9,10},
-			{11,12,13,14}
+			{1,3,5,7},
+			{10,11,16,20},
+			{23,30,34,50}
 		};
-		Tuple res = searchMatrix(m,1);
+		Tuple res = searchMatrix(m,7);
 		if(res.b == false){
-			System.out.println("Cannot find 1.");
+			System.out.println("Cannot find 7.");
 		}else{
-			System.out.println("Position of 1 is ("+new Integer(res.x).toString()+","+new Integer(res.y).toString()+").");
+			System.out.println("Position of 7 is ("+new Integer(res.x).toString()+","+new Integer(res.y).toString()+").");
 		}
 		res = searchMatrix(m,0);
 		if(res.b == false){
