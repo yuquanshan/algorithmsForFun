@@ -18,7 +18,7 @@ public class BinarySearch{
 			else
 				end = mid;
 		}
-		if (A[start] = target)
+		if (A[start] == target)
 			return start;
 		if (A[end] == target)
 			return end;
