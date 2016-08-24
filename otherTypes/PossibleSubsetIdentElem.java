@@ -19,12 +19,12 @@ public class PossibleSubsetIdentElem{
 			list.add(li);
 			return list;
 		}*/
-		Integer head = new Integer(nums[0]);
-		ArrayList<ArrayList<Integer>> already = subsets(Arrays.copyOfRange(nums,1,nums.length));
+		Integer tail = new Integer(nums[nums.length-1]);
+		ArrayList<ArrayList<Integer>> already = subsets(Arrays.copyOfRange(nums,0,nums.length-1));
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>(already);
 		for(int i = 0; i < already.size(); i++){
 			ArrayList<Integer> newlist = new ArrayList<Integer>(already.get(i));
-			newlist.add(head);
+			newlist.add(tail);
 			res.add(newlist);
 		}
 		return res;
