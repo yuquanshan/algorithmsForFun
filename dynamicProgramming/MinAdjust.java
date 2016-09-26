@@ -2,7 +2,7 @@
 given an array of numbers, and a target adjacent difference, find minimum adjustment 
 to satisify that target difference.
 */
-
+// FAILED TO FIGURE IT OUT MYSELF...
 import java.util.*;
 
 public class MinAdjust{
