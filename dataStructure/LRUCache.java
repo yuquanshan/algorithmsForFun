@@ -5,6 +5,7 @@ public class LRUCache{
 	public int get(int key){}
 	public void set(int key, int value){}	
 }
+* (peeked the hint/label "linked list" in the first time)
 */
 import java.util.*;
 class CacheNode{
