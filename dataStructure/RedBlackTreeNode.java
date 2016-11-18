@@ -6,7 +6,7 @@ public class RedBlackTreeNode{
 	public RedBlackTreeNode parent;
 	public RedBlackTreeNode left;
 	public RedBlackTreeNode right;
-	public int color;
+	public int color;	// 0 is red, 1 is black
 	public int val;
 	public RedBlackTreeNode(int val, int color){
 		this.val = val;
