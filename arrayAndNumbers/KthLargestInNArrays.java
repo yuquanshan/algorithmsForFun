@@ -1,5 +1,5 @@
 /**
-* find the Kth Largest element in N array.
+* find the Kth Largest element in N array (unsorted).
 * public static int KthInArrays(int[][] arrays, int k)
 */
 

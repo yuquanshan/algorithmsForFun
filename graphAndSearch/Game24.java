@@ -1,6 +1,7 @@
 /**
 * given an array of numbers, find a way to get 24 using operators + - * %
 * public static String get24(int[] nums) 
+* for example, Given [70, 2, 3], return "((70+2)/3)".
 * (a question witnessed in SnapChat interview, never seen in lint/leetcode 
 * don't know how to do at all in the first time)
 */
