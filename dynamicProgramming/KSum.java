@@ -1,6 +1,6 @@
 /**
-given n distinct positive integers, an integer k, and a number target.
-find k numbers where sum is target, calculate how many solutions there are.
+* given n distinct positive integers, an integer k, and a number target.
+* find k numbers where sum is target, calculate how many solutions there are.
 */
 import java.util.*;
 

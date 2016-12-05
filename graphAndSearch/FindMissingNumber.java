@@ -1,5 +1,5 @@
 /**
-* given a string of numbers from 1 to n, with a number missing 
+* given a string of unordered numbers from 1 to n, with a number missing 
 * find that number.
 * public static int findMissing2(int n, String str)
 * (failed to finish it on time for the first time due to many tiny bugs)
