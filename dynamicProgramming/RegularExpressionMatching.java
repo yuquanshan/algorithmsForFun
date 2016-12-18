@@ -54,11 +54,11 @@ public class RegularExpressionMatching{
 					match[i][j] = match[i-1][j-1];
 				}else if(i>0 && ss.charAt(i-1) == '*'){
 					match[i][j] = match[i-2][j] || match[i-1][j];
-					if(j > 0 && ss.charAt(i-2) == pp.charAt(j-1))
+					if(j > 0 && (ss.charAt(i-2) == pp.charAt(j-1) || ss.charAt(i-2) == '.' || pp.charAt(j-1) == '.'))
 						match[i][j] = match[i][j] || match[i][j-1];
 				}else if(j>0 &&pp.charAt(j-1) == '*'){	
 					match[i][j] = match[i][j-2] || match[i][j-1];
-					if(i > 0 && ss.charAt(i-1) == pp.charAt(j-2))
+					if(i > 0 && (ss.charAt(i-1) == pp.charAt(j-2) || ss.charAt(i-1) == '.' || pp.charAt(j-2) == '.'))
 						match[i][j] = match[i][j] || match[i-1][j];
 				}else{
 					match[i][j] = false;
@@ -77,8 +77,8 @@ public class RegularExpressionMatching{
 		return match[ss.length()][pp.length()];
 	}
 	public static void main(String[] args) {
-		String s = "acaabbaccbbacaabbbb";
-		String p = "a*.*b*.*a*aa*a*";
+		String s = "aa"; //acaabbaccbbacaabbbb";
+		String p = ".*"; //a*.*b*.*a*aa*a*";
 		if(isMatch(s,p))
 			System.out.println("Test passed!");
 	}
