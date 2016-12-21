@@ -17,7 +17,7 @@ public class NthUglyNumber{
 			i2 = findMinLarger(list,i-1,3);
 			i3 = findMinLarger(list,i-1,5);
 			list[i] = Math.min(i3,Math.min(i1,i2));
-			System.out.format("%d:%d\n",i,list[i]);
+			//System.out.format("%d:%d\n",i,list[i]);
 		}
 		return (int)list[n-1];
 	} 
