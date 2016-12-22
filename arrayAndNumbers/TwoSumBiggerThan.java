@@ -2,6 +2,7 @@
 * given an array, find the number of pairs whose sum is bigger than 
 * a target number.
 * public static int twoSum2(int[] nums, int target)
+* (didn't notice the two pointer approach for the first time)
 */
 
 import java.util.*;
@@ -11,22 +12,15 @@ public class TwoSumBiggerThan{
 		if(nums == null || nums.length < 2)
 			return 0;
 		Arrays.sort(nums);
+		int left = 0;
+		int right = nums.length-1;
 		int count = 0;
-		for(int i = 0; i < nums.length-1; i++){
-			int aim = target - nums[i];
-			int start = i+1;
-			int end = nums.length-1;
-			while(end - start > 1){
-				int mid = start + (end-start)/2;
-				if(nums[mid] <= aim)
-					start = mid;
-				else
-					end = mid;
-			}
-			if(nums[start]>aim){
-				count += nums.length - start;
-			}else if(nums[end]>aim){
-				count += nums.length - end;
+		while(left < right){
+			if(nums[left] + nums[right] > target){
+				count += right-left;
+				right--;
+			}else{
+				left++;
 			}
 		}
 		return count;
