@@ -91,16 +91,16 @@ public class Logger{
 		queue = new LinkedList<Message>();
 		set = new HashSet<String>();
 	}
-	public boolean shouldPrintMessage(int timestamp, String msg){
+	public boolean shouldPrintMessage(int timestamp, String message){
 		while(!queue.isEmpty() && queue.peek().timestamp <= timestamp - 10){
 			Message m = queue.remove(); 
 			set.remove(m.msg);
 		}
-		if(set.contains(msg))
+		if(set.contains(message))
 			return false;
 		else{
-			set.add(msg);
-			queue.add(new Message(msg,timestamp));
+			set.add(message);
+			queue.add(new Message(message,timestamp));
 			return true;
 		}
 	}

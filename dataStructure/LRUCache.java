@@ -1,100 +1,96 @@
 /**
 * design an LRU cache
-public class LRUCache{
-	LRUCache(int capacity){}
-	public int get(int key){}
-	public void set(int key, int value){}	
-}
+*	public class LRUCache{
+*		LRUCache(int capacity){}
+*		public int get(int key){}
+*		public void set(int key, int value){}	
+*	}
 * (peeked the hint/label "linked list" in the first time)
 */
 import java.util.*;
-class CacheNode{
-	int key;
-	int value;
-	CacheNode next;
-	CacheNode(int key, int value){
-		this.key = key;
-		this.value = value;
-		next = null;
-	}
-}
 
 public class LRUCache{
-	private int len; 
-	private int maxLen;
-	private CacheNode pseudoHead;
-	LRUCache(int capacity){
-		this.maxLen = capacity;
-		this.pseudoHead = new CacheNode(0,0);
-	}
-	public int get(int key){
-		if(pseudoHead.next == null)
-			return -1;
-		CacheNode tmp = pseudoHead;
-		CacheNode daNode = null;
-		while(tmp.next != null){
-			if(tmp.next.key == key){
-				daNode = tmp;
-				break;
-			}
+	int capacity;
+	HashMap<Integer,DoubleLL> knMap;
+	HashMap<Integer,Integer> kvMap;
+	DoubleLL head;	// we should always evict head
+	DoubleLL tail;
+	int count;
+	public LRUCache(int capacity) {
+        this.capacity = capacity;
+        knMap = new HashMap<Integer, DoubleLL>();
+        kvMap = new HashMap<Integer, Integer>();
+        head = null;
+        tail = null;
+        count = 0;
+    }
+    public int get(int key) {
+        if(knMap.containsKey(key) && capacity > 0){
+        	DoubleLL node = knMap.get(key);
+        	if(node != tail){
+        		if(node == head){
+        			head = node.next;
+        			head.prev = null;
+        		}else{
+        			node.prev.next = node.next;
+        			node.next.prev = node.prev;
+        		}
+        		tail.next = node;
+        		node.next = null;
+        		node.prev = tail;
+        		tail = node;
+        	}
+        	return kvMap.get(key);
+        }else{
+        	return -1;
+        }
+    }
+
+    public void set(int key, int value) {
+        if(capacity == 0){
+        	return;
+        }else if(knMap.containsKey(key)){
+        	kvMap.put(key,value);
+        	get(key);	// mark recent use
+        }else{
+        	DoubleLL node = new DoubleLL(key);
+        	kvMap.put(key,value);
+        	knMap.put(key, node);
+        	if(capacity == count){ // need to evict
+        		int keytoevict = head.val;
+        		head = head.next;
+        		if(tail.val == keytoevict)
+        			tail = null;
+        		else
+        			head.prev = null;
+        		kvMap.remove(keytoevict);
+        		knMap.remove(keytoevict);
+        	}else
+        		count++;
+        	if(head == null){
+        		head = node;
+        		tail = node;
+        	}else{
+        		tail.next = node;
+        		node.prev = tail;
+        		tail = node;
+        	}
+        }
+    }
+    public void printCache(){
+    	DoubleLL tmp = head;
+    	while(tmp != null){
+			System.out.format("%d->",tmp.val);
 			tmp = tmp.next;
 		}
-		if(daNode == null){
-			return -1;
-		}else{
-			tmp = daNode.next;
-			daNode.next = tmp.next;
-			CacheNode node = pseudoHead;
-			while(node.next != null){
-				node = node.next;
-			}
-			node.next = tmp;
-			tmp.next = null;
-			return tmp.value;
-		}
-	}
-	public void set(int key, int value){
-		CacheNode tmp = pseudoHead;
-		CacheNode daNode = null;
-		while(tmp.next != null){
-			if(tmp.next.key == key){
-				daNode = tmp;
-				break;
-			}
-			tmp = tmp.next;
-		}
-		if(daNode == null){
-			tmp.next = new CacheNode(key,value);
-			len++;
-			if(len > maxLen){
-				pseudoHead.next = pseudoHead.next.next;
-			}
-		}else{
-			tmp = daNode.next;
-			tmp.value = value;
-			daNode.next = tmp.next;
-			CacheNode node = pseudoHead;
-			while(node.next != null){
-				node = node.next;
-			}
-			node.next = tmp;
-			tmp.next = null;
-		}
-	}
-	public void printCache(){
-		CacheNode tmp = pseudoHead.next;
-		while(tmp != null){
-			System.out.format("(%d,%d)",tmp.key,tmp.value);
-			tmp = tmp.next;
-		}
-	}
+		System.out.println("null");
+    }
 	public static void main(String[] args) {
-		LRUCache cache = new LRUCache(3);
-		cache.set(1,2);
-		cache.set(2,3);
-		cache.set(3,4);
-		cache.set(1,3);
-		cache.set(4,5);
+		LRUCache cache = new LRUCache(1);
+		cache.set(2,1);
+		System.out.println(cache.get(2));
+		cache.set(3,2);
 		cache.printCache();
+		System.out.println(cache.get(3));
 	}
 }
