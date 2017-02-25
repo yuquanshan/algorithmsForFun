@@ -28,7 +28,8 @@ public class LargestRectangleInHistogram{
 	}
 
 	public static void main(String[] args) {
-		int[] height = {3,5,5,2,5,5,6,6,4,4,1,1,2,5,5,6,6,4,1,3};
+		//int[] height = {3,5,5,2,5,5,6,6,4,4,1,1,2,5,5,6,6,4,1,3};
+		int[] height = {3,3,4};
 		System.out.format("The array is %s, the largest rectangular area is %d.\n",Arrays.toString(height),largestRectangleArea(height));
 	}
 }
