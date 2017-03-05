@@ -18,6 +18,20 @@
 
 public class PoorPigs {
 	public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
-	
+		int partitions = minutesToTest/minutesToDie;
+        if(partitions == 0) return 0;
+        int tmp = partitions + 1;
+        int count = 0;
+        buckets--;
+        while(buckets > 0) {
+            buckets = buckets/tmp;
+            count++;
+        }
+        return count;
 	}
+	/* 
+	explanation: can present the bucket in (x,y,z,...) coordinate, can use one pig to determine
+	one dimention, say use pig 1 to determine first coordinate: (0 ~ p - 1, y, z, ...), in p - 1 
+	trials, where p = minutesToTest/minutesToDie.
+	*/
 }
