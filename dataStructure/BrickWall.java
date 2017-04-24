@@ -55,10 +55,28 @@ public class BrickWall {
 			while (heap.peek().acc == val) {
 				Layer tmp = heap.poll();
 				tmp.acc += wall.get(tmp.row).get(++tmp.offset);
+				heap.add(tmp);
 				count++;
 			}
 			if (layern - count < best) best = layern - count;
 		}
 		return best;
+	}
+	public static void main(String[] args) {
+		BrickWall test = new BrickWall();
+		List<List<Integer>> wall = new ArrayList<List<Integer>>();
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(1); list.add(2); list.add(2); list.add(1); wall.add(list);
+		list = new ArrayList<Integer>();
+		list.add(3); list.add(1); list.add(2); wall.add(list);
+		list = new ArrayList<Integer>();
+		list.add(1); list.add(3); list.add(2); wall.add(list);
+		list = new ArrayList<Integer>();
+		list.add(2); list.add(4); wall.add(list);
+		list = new ArrayList<Integer>();
+		list.add(3); list.add(1); list.add(2); wall.add(list);
+		list = new ArrayList<Integer>();
+		list.add(1); list.add(3); list.add(1); list.add(1); wall.add(list);
+		System.out.println(test.leastBricks(wall));
 	}
 }
