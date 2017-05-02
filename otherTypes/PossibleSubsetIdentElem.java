@@ -1,6 +1,6 @@
 /**
-find all possible subset of a large set with identical element
-(a recursive approach)
+* find all possible subset of a large set with identical element
+* (a recursive approach)
 */
 import java.util.*;
 

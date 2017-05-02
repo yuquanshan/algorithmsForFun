@@ -1,6 +1,6 @@
 /**
-Given a set of integers (elements may not be identical), find all possible subsets
-both resursive and non-recursive approaches
+* Given a set of integers (elements may not be identical), find all possible subsets
+* both resursive and non-recursive approaches
 */
 import java.util.*;
 

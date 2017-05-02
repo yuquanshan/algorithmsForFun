@@ -1,6 +1,6 @@
 /**
-given a list with non-identical elements, find all possible orders
-(a recursive approach)
+* given a list with non-identical elements, find all possible orders
+* (a recursive approach)
 */
 import java.util.*;
 public class PossibleOrders{
