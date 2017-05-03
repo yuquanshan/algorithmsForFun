@@ -1,7 +1,7 @@
 /**
-given a array of numbers and a target, return i and j such that
-ith and jth element of the array sum to the target.
-public static int[] twoSum(int[] numbers, int target)
+* given a array of numbers and a target, return i and j such that
+* ith and jth element of the array sum to the target.
+* public static int[] twoSum(int[] numbers, int target)
 */
 import java.util.*;
 

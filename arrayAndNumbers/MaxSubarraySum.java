@@ -1,6 +1,6 @@
 /**
-given an array of integers, return the maximum sum of its subarray.
-public static int maxSubsum(int[] nums)
+* given an array of integers, return the maximum sum of its subarray.
+* public static int maxSubsum(int[] nums)
 */
 import java.util.*;
 

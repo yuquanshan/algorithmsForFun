@@ -7,6 +7,7 @@
 
 public class PowerOfFour{
 	public boolean isPowerOfFour(int num){
+		// num == num & (-num) means num's first binary 1 is the only 1 in num 
 		return num > 0 && num == (num & (-num)) && (0x55555555 & num) != 0;
 	}
 }

@@ -1,7 +1,7 @@
 /**
-given an array num[] and a target, partition the array and 
-return an index i, such that nums[x] >= k when x >= i.
-public static int partitionArray(int[] nums, int k)
+* given an array num[] and a target, partition the array and 
+* return an index i, such that nums[x] >= k when x >= i.
+* public static int partitionArray(int[] nums, int k)
 */
 
 import java.util.*;

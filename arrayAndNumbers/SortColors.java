@@ -1,8 +1,8 @@
 /**
-given an array of colors red(0), white(1), blue(2), sort them in the orer of 
-red, white, blue.
-public static void sort(int[] nums)
-(didn't know the one-pass approach in the first time)
+* given an array of colors red(0), white(1), blue(2), sort them in the orer of 
+* red, white, blue.
+* public static void sort(int[] nums)
+* (didn't know the one-pass approach in the first time)
 */
 import java.util.*;
 

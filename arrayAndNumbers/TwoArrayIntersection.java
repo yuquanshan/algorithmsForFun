@@ -1,7 +1,7 @@
 /**
-given two arrays, get the intersection elements, e.g.,
-given [1,2,2,1] and [2,2], should return [2].
-public static int[] intersection(int[] nums1, int[] nums2).
+* given two arrays, get the intersection elements, e.g.,
+* given [1,2,2,1] and [2,2], should return [2].
+* public static int[] intersection(int[] nums1, int[] nums2).
 */
 import java.util.*;
 

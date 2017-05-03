@@ -1,9 +1,9 @@
 /**
-given k colors (1,2,3,...,k), and an array of colors, sort them in 
-the order of 1,2,3,...,k.
-public static void sortColors(int[] colors, int k)
-(didn't realize there is another more space efficient and quick way 
-to sort in the first time)
+* given k colors (1,2,3,...,k), and an array of colors, sort them in 
+* the order of 1,2,3,...,k.
+* public static void sortColors(int[] colors, int k)
+* (didn't realize there is another more space efficient and quick way 
+* to sort in the first time)
 */
 import java.util.*;
 

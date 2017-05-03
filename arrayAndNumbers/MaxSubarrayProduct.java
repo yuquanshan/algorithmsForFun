@@ -1,7 +1,7 @@
 /**
-given an array, return the largest subarray product.
-public static int maxProd(int[] nums)
-(unable to finish on time in the first time)
+* given an array, return the largest subarray product.
+* public static int maxProd(int[] nums)
+* (unable to finish on time in the first time)
 */
 import java.util.*;
 public class MaxSubarrayProduct{

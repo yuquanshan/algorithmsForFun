@@ -1,7 +1,7 @@
 /**
-find median of two sorted array.
-public static int findMedian(int[] A, int[] B)
-(didn't know how to implement in O(log(A.length+B.length)) for the first time)
+* find median of two sorted array.
+* public static int findMedian(int[] A, int[] B)
+* (didn't know how to implement in O(log(A.length+B.length)) for the first time)
 */
 import java.util.*;
 

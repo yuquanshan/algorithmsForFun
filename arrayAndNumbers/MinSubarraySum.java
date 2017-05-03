@@ -1,6 +1,6 @@
 /**
-given an array return the minimum sum of its subarray
-public static int minSum(ArrayList<Integer> nums)
+* given an array return the minimum sum of its subarray
+* public static int minSum(ArrayList<Integer> nums)
 */
 import java.util.*;
 public class MinSubarraySum{

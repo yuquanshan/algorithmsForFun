@@ -1,8 +1,8 @@
 /**
-given an int array, find a subarray whose sum is zero,
-return the indices of the first and last element of this subarray.
-public static ArrayList<Integer> zeroSubarray(int[] nums)
-(didn't know how to do until seeing the tag "hash table".)
+* given an int array, find a subarray whose sum is zero,
+* return the indices of the first and last element of this subarray.
+* public static ArrayList<Integer> zeroSubarray(int[] nums)
+* (didn't know how to do until seeing the tag "hash table".)
 */
 import java.util.*;
 

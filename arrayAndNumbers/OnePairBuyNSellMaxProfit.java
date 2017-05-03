@@ -1,7 +1,7 @@
 /**
-given an array of prices in a time series, 
-find a buy-sell pair which maximize the profit.
-public static int maxProfit(int[] prices)
+* given an array of prices in a time series, 
+* find a buy-sell pair which maximize the profit.
+* public static int maxProfit(int[] prices)
 */
 import java.util.*;
 

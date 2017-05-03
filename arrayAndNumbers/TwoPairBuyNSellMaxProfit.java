@@ -1,8 +1,8 @@
 /**
-given an array of prices in a time series, find the maximum profit 
-if only two buy-sell pairs are allowed.
-public static int maxProfit(int[] prices)
-(failed to give a correct algorithm in the first time)
+* given an array of prices in a time series, find the maximum profit 
+* if only two buy-sell pairs are allowed.
+* public static int maxProfit(int[] prices)
+* (failed to give a correct algorithm in the first time)
 */
 import java.util.*;
 
