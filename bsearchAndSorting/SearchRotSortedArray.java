@@ -1,5 +1,6 @@
 /**
-given an sorted rotated array with all identical numbers, find the index of target value 
+* given an sorted rotated array with all identical numbers, find the index of target value 
+* public int search(int[] A, int target)
 */
 
 public class SearchRotSortedArray{

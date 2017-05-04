@@ -1,8 +1,9 @@
 /**
-A version chain (SVNRepo) can be accessed from 1 to n, 
-a bad version was submitted causing it and its following
-version(s) to be bad. How to verify if a version k is bad:
-	SVNRepo.isBadVersion(k)
+* A version chain (SVNRepo) can be accessed from 1 to n, 
+* a bad version was submitted causing it and its following
+* version(s) to be bad. How to verify if a version k is bad:
+*	SVNRepo.isBadVersion(k)
+* public int findFirstBadVersion(int n)
 */
 
 class SVNRepo{

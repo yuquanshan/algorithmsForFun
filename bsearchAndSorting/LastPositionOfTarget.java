@@ -1,6 +1,7 @@
 /** 
-find the last position of a target number of sorted array,
-return -1 if target doesn't exist.
+* find the last position of a target number of sorted array,
+* return -1 if target doesn't exist.
+* public int lastPosition(int[] A, int target)
 */
 
 public class LastPositionOfTarget{

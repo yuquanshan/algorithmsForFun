@@ -1,5 +1,6 @@
 /**
-Given a sorted int array, return an index of an element if found. 
+* Given a sorted int array, return an index of an element if found. 
+* public int findItRange(int[] array, int elem, int start, int end)
 */
 import java.util.*;
 

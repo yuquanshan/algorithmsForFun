@@ -1,6 +1,7 @@
 /**
-Given a bunch of logs with different lengths, find the largest length to 
-saw which would yield at least k pieces with that length, all numbers must be integer.
+* Given a bunch of logs with different lengths, find the largest length to 
+* saw which would yield at least k pieces with that length, all numbers must be integer.
+* public int wayToCut(int[] logs, int k)
 */
 import java.util.*;
 

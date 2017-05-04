@@ -1,5 +1,6 @@
 /**
-given a sorted array with non-identical elements, find the first position of a target
+* given a sorted array with non-identical elements, find the first position of a target
+* public int binarySearch(int[] nums, int target)
 */
 
 public class FirstPositionOfSortedArray{

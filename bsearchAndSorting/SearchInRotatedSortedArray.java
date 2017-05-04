@@ -1,7 +1,8 @@
 /**
-search in an rotated sorted array which may contain duplicated elements,
-the problem is when A[mid] = A[start] = A[end], 
-you cannot determine the target falls in which section. 
+* search in an rotated sorted array which may contain duplicated elements,
+* the problem is when A[mid] = A[start] = A[end], 
+* you cannot determine the target falls in which section. 
+* public boolean search(int[] A, int target)
 */
 
 public class SearchInRotatedSortedArray{

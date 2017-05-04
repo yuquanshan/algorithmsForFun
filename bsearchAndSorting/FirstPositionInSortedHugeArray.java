@@ -1,6 +1,7 @@
 /**
-given a huge sorted array whose amount of elements is unknown, the element 
-of the array can only be accessed through array.get(k). find the first target.
+* given a huge sorted array whose amount of elements is unknown, the element 
+* of the array can only be accessed through array.get(k). find the first target.
+* public int searchHugeArray(HugeArray reader, int target)
 */
 
 class HugeArray{	// a "fake" huge array

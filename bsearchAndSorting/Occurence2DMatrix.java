@@ -1,7 +1,8 @@
 /**
-search for a value in an m*n matrix, return occurence of it. 
-this matrix is row wise and column wise sorted, no duplicated 
-integer in each row or column.
+* search for a value in an m*n matrix, return occurence of it. 
+* this matrix is row wise and column wise sorted, no duplicated 
+* integer in each row or column.
+* public int searchMatrix(int[][] matrix, int target)
 */
 
 public class Occurence2DMatrix{

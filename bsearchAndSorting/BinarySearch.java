@@ -1,6 +1,7 @@
 /**
-use binary search to find a target in a sorted array,
-return -1 if target doesn't exist in the array.
+* use binary search to find a target in a sorted array,
+* return -1 if target doesn't exist in the array.
+* public int search(int[] A, int target)
 */
 
 public class BinarySearch{

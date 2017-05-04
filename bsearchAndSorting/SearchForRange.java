@@ -1,5 +1,7 @@
 /**
-search a range of a number in a sorted array (there may exit consecutive positions with the same value)
+* search a range of a number in a sorted array (there may exit 
+* consecutive positions with the same value)
+* public int[] searchRange(int[] A, int target)
 */
 
 import java.util.*;

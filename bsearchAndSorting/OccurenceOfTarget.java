@@ -1,5 +1,6 @@
 /**
-Given an sorted array, find the occurence of a target.
+* Given an sorted array, find the occurence of a target.
+* public int totalOccurence(int[] A, int target)
 */
 
 public class OccurenceOfTarget{

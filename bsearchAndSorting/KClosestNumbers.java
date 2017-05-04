@@ -1,6 +1,7 @@
 /**
-given a sorted array and a target, return k numbers in the array which
-are the closest to the target in ascending order. 
+* given a sorted array and a target, return k numbers in the array which
+* are the closest to the target in ascending order. 
+* public int[] kClosest(int[] A, int target, int k)
 */
 import java.util.*;
 public class KClosestNumbers{

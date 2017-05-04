@@ -1,8 +1,9 @@
 /**
-find the position of one of the peak element(s) in an array A such that
-	1. elements are all adjacently identical;
-	2. A[0]<A[1] && A[A.length-2] > A[A.length-1].
-peak point with position p is the point that A[p-1] < A[p] > A[p+1].
+* find the position of one of the peak element(s) in an array A such that
+*	1. elements are all adjacently identical;
+*	2. A[0]<A[1] && A[A.length-2] > A[A.length-1].
+* peak point with position p is the point that A[p-1] < A[p] > A[p+1].
+* public int findPeakPos(int[] A)
 */
 
 public class FindPeakPosition{

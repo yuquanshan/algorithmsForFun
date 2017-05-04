@@ -1,5 +1,16 @@
 /**
-locate an element in a sorted n*m matrix
+* locate an element in a sorted n*m matrix
+* 	public Tuple searchMatrix(int[][] matrix, int elem)
+*	class Tuple{
+*			public final boolean b;
+*			public final int x;
+*			public final int y;
+*			public Tuple(boolean b, int x, int y){
+*				this.b = b;
+*				this.x = x;
+*				this.y = y;
+*			}
+*	}
 */
 class Tuple{
 		public final boolean b;

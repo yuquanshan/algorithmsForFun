@@ -1,6 +1,7 @@
 /**
-given a sorted arrary and a target number, find the index of a number which is closest 
-to the target. return -1 if target doesn't exist.
+* given a sorted arrary and a target number, find the index of a number which is closest 
+* to the target. return -1 if target doesn't exist.
+* public int closestNumber(int[] A, int target)
 */
 
 public class ClosestNumber{

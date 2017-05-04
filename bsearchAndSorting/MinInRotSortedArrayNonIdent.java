@@ -1,5 +1,6 @@
 /**
-find minimum in a rotated sorted *non-identical* array 
+* find minimum in a rotated sorted *non-identical* array 
+* public int findMin(int[] num)
 */
 
 public class MinInRotSortedArrayNonIdent{
