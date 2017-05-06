@@ -1,10 +1,11 @@
 /**
-define a tweak of tree as
-	A       A
-   / \     / \
-  B   C   C   B
-determine whether two trees are identical or not, despite of tweaks.
-assuming there is no two nodes with the same value in a tree.
+* define a tweak of tree as
+*	A       A
+*   / \     / \
+*  B   C   C   B
+* determine whether two trees are identical or not, despite of tweaks.
+* assuming there is no two nodes with the same value in a tree.
+* public boolean isIdent(TreeNode a, TreeNode b)
 */
 
 public class IdenticalTreesWithTweak{

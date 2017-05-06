@@ -1,5 +1,6 @@
 /**
-insert a node in BST.
+* insert a node in BST.
+* public TreeNode insertNode(TreeNode root, TreeNode node)
 */
 
 public class BSTInsertNode{

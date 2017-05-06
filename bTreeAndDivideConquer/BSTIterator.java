@@ -1,8 +1,8 @@
 /**
-given a BST, invent an iterator (BSTIterator) which visits nodes in-order 
-and has two methods, 
-next() 		-	return the next node to be visited;
-hasNext()	- 	return if there is next node to be visited.
+* given a BST, invent an iterator (BSTIterator) which visits nodes in-order 
+* and has two methods, 
+* next() 		-	return the next node to be visited;
+* hasNext()	- 	return if there is next node to be visited.
 */
 import java.util.*;
 

@@ -1,5 +1,6 @@
 /**
-inorder traverse a binary tree
+* inorder traverse a binary tree
+* public static ArrayList<Integer> inorderTraversal(TreeNode root)
 */
 
 // do it without recursion

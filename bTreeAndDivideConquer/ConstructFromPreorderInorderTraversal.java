@@ -1,5 +1,6 @@
 /**
-build a binary tree from the in-order and pre-order traversals of the tree.
+* build a binary tree from the in-order and pre-order traversals of the tree.
+* public TreeNode buildTree(int[] preorder, int[] inorder)
 */
 
 public class ConstructFromPreorderInorderTraversal{

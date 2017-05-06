@@ -1,5 +1,6 @@
 /**
-determine if a tree is complete or not.
+* determine if a tree is complete or not.
+* public boolean isComplete(TreeNode root)
 */
 
 // do it using BFS

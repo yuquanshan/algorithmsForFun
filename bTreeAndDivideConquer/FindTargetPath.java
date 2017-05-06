@@ -1,5 +1,6 @@
 /**
-given a binary tree, find all paths starting from root whose sum equals the target.
+* given a binary tree, find all paths starting from root whose sum equals the target.
+* public List<List<Integer>> findTargetPath(TreeNode root, int target)
 */
 import java.util.*;
 

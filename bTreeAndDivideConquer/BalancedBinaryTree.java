@@ -1,6 +1,7 @@
 /**
-Given a balanced tree, determine if it's balanced or not.
-For every node, if the depths of its two subtrees never differ by more than 1. 
+* Given a balanced tree, determine if it's balanced or not.
+* For every node, if the depths of its two subtrees never differ by more than 1. 
+* public boolean isBalanced(TreeNode root)
 */
 // TreeNode is defined in MaxDepthOfBTree.java
 
