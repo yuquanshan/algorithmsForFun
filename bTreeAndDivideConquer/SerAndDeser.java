@@ -1,6 +1,10 @@
 /**
-write a function to serialize a binary tree to a string, and another function
-to recover the serialized tree from that string.
+* write a function to serialize a binary tree to a string, and another function
+* to recover the serialized tree from that string.
+public class SerAndDeser {
+	public String serialize(TreeNode root) {}
+	public TreeNode deserialize(String data) {}	
+}
 */
 import java.util.*;
 

@@ -1,5 +1,6 @@
 /**
-given a binary tree, return the max path sum. the path can start and end in any node.
+* given a binary tree, return the max path sum. the path can start and end in any node.
+* public Tuple maxPathSumPlus(TreeNode root)
 */
 
 public class UndirectedMaxSum{

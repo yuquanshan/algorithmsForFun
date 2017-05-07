@@ -1,6 +1,8 @@
 /**
-given two binary trees, determine if two trees are *strictly* identical,
-if tweak exits, the two trees are not identical.
+* given two binary trees, determine if two trees are *strictly* identical,
+* if tweak exits, the two trees are not identical.
+*
+* public boolean isIdentical(TreeNode a, TreeNode b)
 */
 
 public class StrictlyIdenticalTrees{

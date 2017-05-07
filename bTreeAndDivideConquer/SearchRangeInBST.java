@@ -1,5 +1,7 @@
 /**
-find all elements x such that k1<=x<=k2 in binary search tree.
+* find all elements x such that k1<=x<=k2 in binary search tree.
+*
+* public ArrayList<Integer> searchRange(TreeNode root, int k1, int k2)
 */
 import java.util.*;
 public class SearchRangeInBST{

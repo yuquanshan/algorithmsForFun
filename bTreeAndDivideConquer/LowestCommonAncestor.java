@@ -1,5 +1,6 @@
 /**
-given a root and two nodes in a Binary tree, find the lowest common ancester of the two nodes.
+* given a root and two nodes in a Binary tree, find the lowest common ancester of the two nodes.
+* public TreeNode lca(TreeNode root, TreeNode A, TreeNode B)
 */
 
 public class LowestCommonAncestor{

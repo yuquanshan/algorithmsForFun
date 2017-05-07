@@ -1,5 +1,6 @@
 /**
-preorder traversal of a binary tree.
+* preorder traversal of a binary tree.
+* public ArrayList<Integer> preorder(TreeNode root)
 */
 import java.util.*;
 

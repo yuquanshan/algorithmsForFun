@@ -1,5 +1,6 @@
 /**
-preorder traverse a binary tree.
+* preorder traverse a binary tree.
+* public ArrayList<Integer> postorderTraversal(TreeNode root)
 */
 
 // do it without recursion

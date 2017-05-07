@@ -1,5 +1,6 @@
 /**
-Given a binary tree, find its maximum depth.
+* Given a binary tree, find its maximum depth.
+* public int maxDepth(TreeNode root)
 */
 
 public class MaxDepthOfBTree{

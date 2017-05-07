@@ -1,5 +1,6 @@
 /**
-Given a binary tree, validate if it is a BST.
+* Given a binary tree, validate if it is a BST.
+* public boolean isValidBST(TreeNode root)
 */
 
 public class ValidateBST{

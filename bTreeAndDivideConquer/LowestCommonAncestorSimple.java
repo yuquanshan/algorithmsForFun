@@ -1,6 +1,7 @@
 /**
-simpe version of lowest common ancestor.
-now each node (ParentTreeNode) has parent attribute
+* simpe version of lowest common ancestor.
+* now each node (ParentTreeNode) has parent attribute
+* public ParentTreeNode lca(ParentTreeNode root, ParentTreeNode A, ParentTreeNode B)
 */
 import java.util.*;
 

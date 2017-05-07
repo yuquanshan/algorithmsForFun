@@ -1,5 +1,6 @@
 /**
-remove a node in binary search tree while keeping the property of BST.
+* remove a node in binary search tree while keeping the property of BST.
+* public TreeNode remove(TreeNode root, int value)
 */
 
 public class RemoveNodeInBST{

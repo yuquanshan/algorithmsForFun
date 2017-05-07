@@ -1,5 +1,6 @@
 /**
-get the min depth of binary tree.
+* get the min depth of binary tree.
+* public int minDepth(TreeNode root)
 */
 
 public class MinDepthOfBTree{

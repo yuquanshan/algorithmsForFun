@@ -1,5 +1,7 @@
 /**
-given a binary tree, check if the binary tree is symmetric.
+* given a binary tree, check if the binary tree is symmetric.
+*
+* public boolean isSymmetric(TreeNode root)
 */
 
 // can do BFS

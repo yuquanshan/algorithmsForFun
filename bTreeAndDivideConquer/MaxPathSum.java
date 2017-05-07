@@ -1,5 +1,6 @@
 /**
-given a binary tree, find a path from root with max sum, return the max sum.
+* given a binary tree, find a path from root with max sum, return the max sum.
+* public int maxPathSum(TreeNode root)
 */
 
 public class MaxPathSum{
