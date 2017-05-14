@@ -1,5 +1,6 @@
 /**
-given a m*n grid, return the number of unique paths from top left to bottom right.
+* given a m*n grid, return the number of unique paths from top left to bottom right.
+* public int uniquePath(int m, int n)
 */
 
 public class UniquePathDownRight{

@@ -1,5 +1,6 @@
 /**
-find the length of the longest common substring (*continuous* characters) between two strings.
+* find the length of the longest common substring (*continuous* characters) between two strings.
+* public int lcs(String A, String B)
 */
 
 import java.util.*;

@@ -1,12 +1,13 @@
 /**
-given a triangle, e.g.,
-[
-		[2],
-	   [3,4],
-	  [6,5,7],
-	 [4,1,8,3]
-]
-find min distance path from top to bottom. one can move from one node to its adjacent nodes.
+* given a triangle, e.g.,
+* [
+*		[2],
+*	   [3,4],
+*	  [6,5,7],
+*	 [4,1,8,3]
+* ]
+* find min distance path from top to bottom. one can move from one node to its adjacent nodes.
+* public int minPath(int[][] triangle)
 */
 import java.util.*;
 

@@ -1,5 +1,6 @@
 /**
-find the length of longest subsequence between two strings.
+* find the length of longest subsequence between two strings.
+* public int lcs(String A, String B)
 */
 
 import java.util.*;

@@ -1,6 +1,7 @@
 /**
-given two strings S and T, return the number of 
-distinct subsequences of T in S. 
+* given two strings S and T, return the number of 
+* distinct subsequences of T in S. 
+* public int distinctSub(String S, String T)
 */
 import java.util.*;
 

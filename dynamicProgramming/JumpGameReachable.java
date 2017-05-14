@@ -1,6 +1,7 @@
 /**
-given an array, each elements in the array indicates the maximum jump distance 
-from that position. determine if you can jump from the first position to the last position.
+* given an array, each elements in the array indicates the maximum jump distance 
+* from that position. determine if you can jump from the first position to the last position.
+* public boolean canJump(int[] A)
 */
 
 

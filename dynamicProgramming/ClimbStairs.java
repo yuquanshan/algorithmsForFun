@@ -1,6 +1,7 @@
 /**
-take n steps to reach another stage, you can climb either 1 or 2 steps.
-how many possible steps combinations to reach you destination?
+* take n steps to reach another stage, you can climb either 1 or 2 steps.
+* how many possible steps combinations to reach you destination?
+* public int steps(int n)
 */
 
 public class ClimbStairs{

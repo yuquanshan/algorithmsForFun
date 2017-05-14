@@ -1,7 +1,8 @@
 /**
-given a string s and a dictionary of words,
-determine if that string can be break into a space-separated
-sequence of dictionary words.
+* given a string s and a dictionary of words,
+* determine if that string can be break into a space-separated
+* sequence of dictionary words.
+* public boolean breakable(String s, Set<String> dict)
 */
 
 // dumb implementation, slow and memory consuming...

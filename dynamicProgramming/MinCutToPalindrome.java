@@ -1,6 +1,7 @@
 /**
-given a string, cut it into substrings such that every substring is a palindrome,
-return the minimum cuts needed.
+* given a string, cut it into substrings such that every substring is a palindrome,
+* return the minimum cuts needed.
+* public int minCut(String s)
 */
 
 public class MinCutToPalindrome{

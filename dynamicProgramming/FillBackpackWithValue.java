@@ -1,5 +1,5 @@
 /**
-given n items with different sizes and values, how much value can you fill in a backpack?
+* given n items with different sizes and values, how much value can you fill in a backpack?
 */
 import java.util.*;
 // achieving O(m) space

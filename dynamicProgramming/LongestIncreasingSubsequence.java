@@ -1,5 +1,6 @@
 /**
-given a sequence of integers, find the length of longest increasing subsequence.
+* given a sequence of integers, find the length of longest increasing subsequence.
+* public int longest(int[] nums)
 */
 
 // a smarter approach which is O(nlogn), ref https://en.wikipedia.org/wiki/Longest_increasing_subsequence

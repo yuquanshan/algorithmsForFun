@@ -1,12 +1,13 @@
 /**
-given a m*n grid and an obstacle matrix, which depicts the position of obstacles,
-return the number of unique paths from top left to bottom right.
-a grid with only one obstacle in the center can be described in the following obstacle matrix
-[
- 	[0,0,0],
- 	[0,1,0],
- 	[0,0,0]
-]
+* given a m*n grid and an obstacle matrix, which depicts the position of obstacles,
+* return the number of unique paths from top left to bottom right.
+* a grid with only one obstacle in the center can be described in the following obstacle matrix
+* [
+* 	[0,0,0],
+* 	[0,1,0],
+* 	[0,0,0]
+* ]
+* public int uniquePath(int[][] obstacleGrid)
 */
 import java.util.*;
 public class UniquePathDownRightWithObstacles{

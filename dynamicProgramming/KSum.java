@@ -1,6 +1,7 @@
 /**
 * given n distinct positive integers, an integer k, and a number target.
 * find k numbers where sum is target, calculate how many solutions there are.
+* public int ksum(int[] A, int k, int target)
 */
 import java.util.*;
 

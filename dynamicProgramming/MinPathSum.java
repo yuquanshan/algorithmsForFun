@@ -1,7 +1,8 @@
 /**
-given a m*n grid with non-negative numbers, find a path from top left to 
-bottom right which collects as less sum of numbers as possible. 
-can only move down or right.
+* given a m*n grid with non-negative numbers, find a path from top left to 
+* bottom right which collects as less sum of numbers as possible. 
+* can only move down or right.
+* public int minPathSum(int[][] grid)
 */
 import java.util.*;
 

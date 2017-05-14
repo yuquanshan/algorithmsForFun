@@ -1,5 +1,6 @@
 /**
-given three strings s1, s2, s3, return if s3 can be obtained by interleaving s1 and s2. 
+* given three strings s1, s2, s3, return if s3 can be obtained by interleaving s1 and s2. 
+* public boolean interleaving(String s1, String s2, String s3)
 */
 
 public class StringInterleaving{

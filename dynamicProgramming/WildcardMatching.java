@@ -1,8 +1,9 @@
 /**
-given two strings, see if they match with wildcard,
-wildcard:
-	'?' matches any single character;
-	'*' matches any sequence of characters
+* given two strings, see if they match with wildcard,
+* wildcard:
+*	'?' matches any single character;
+*	'*' matches any sequence of characters
+* public boolean isMatch(String s, String p)
 */
 import java.util.*;
 

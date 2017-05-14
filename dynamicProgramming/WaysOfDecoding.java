@@ -1,9 +1,10 @@
 /**
-encode the letters to digits like 
-	'A' -> 1
-	'B' -> 2
-	...
-given a string of encoded digits, find the number of all possible ways of decoding.
+* encode the letters to digits like 
+*	'A' -> 1
+*	'B' -> 2
+*	...
+* given a string of encoded digits, find the number of all possible ways of decoding.
+* public int numOfWays(String s)
 */
 import java.util.*;
 

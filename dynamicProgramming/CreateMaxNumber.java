@@ -5,6 +5,7 @@
 * public static int[] maxNumber(int[] nums1, int[] nums2, int k)
 * (witnessed in Google interview)
 * (failed to solve it for the first time)
+* public int[] maxNumber(int[] nums1, int[] nums2, int k)
 */
 import java.util.*;
 

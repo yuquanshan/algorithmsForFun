@@ -1,6 +1,7 @@
 /**
-given n items with different sizes and an empty backpack with a certain size,
-how much the backpack can hold?
+* given n items with different sizes and an empty backpack with a certain size,
+* how much the backpack can hold?
+* public int fill(int m, int[] A)
 */
 import java.util.*;
 

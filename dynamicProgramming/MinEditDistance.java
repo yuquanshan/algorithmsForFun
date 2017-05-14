@@ -1,9 +1,10 @@
 /**
-given two strings, find the minimum number of operations to convert 
-one string to another, assume there are three types of operations:
-	insert a character
-	delete a character
-	replace a character
+* given two strings, find the minimum number of operations to convert 
+* one string to another, assume there are three types of operations:
+*	insert a character
+*	delete a character
+*	replace a character
+* public int minDistance(String word1, String word2)
 */
 
 public class MinEditDistance{

@@ -1,7 +1,8 @@
 /**
-given an array, each element in the array represent the maximum distance 
-you can jump from that position. how to jump from the frist position of 
-the array to the last position of the array with the minimum number of jumps.
+* given an array, each element in the array represent the maximum distance 
+* you can jump from that position. how to jump from the frist position of 
+* the array to the last position of the array with the minimum number of jumps.
+* public int jump(int[] A)
 */
 import java.util.*;
 
