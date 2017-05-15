@@ -1,7 +1,9 @@
 /**
-given a preorder traversal result of a *full* binary tree, e.g., "NNLNLLL", 
-return the max height of the tree.
-original problem see http://stackoverflow.com/questions/14612428/find-tree-height-given-preorder.
+* given a preorder traversal result of a *full* binary tree, e.g., "NNLNLLL", 
+* return the max height of the tree.
+* original problem see http://stackoverflow.com/questions/14612428/find-tree-height-given-preorder.
+*
+* public int maxHeight(String trav)
 */
 import java.util.*;
 

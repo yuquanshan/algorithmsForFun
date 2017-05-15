@@ -1,6 +1,7 @@
 /**
-given a binary tree, return the result of its zigzag level traversal,
-first left to right then right to left and so on. 
+* given a binary tree, return the result of its zigzag level traversal,
+* first left to right then right to left and so on. 
+* public ArrayList<ArrayList<Integer>> zigzag(TreeNode root)
 */
 import java.util.*;
 
