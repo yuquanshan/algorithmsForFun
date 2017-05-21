@@ -1,12 +1,12 @@
-/** given an array, in-place shift it by k
+/** given an array, in-place right-shift it by k
 * public int[] inPlaceShift(int[] array)
 */
 import java.util.*;
 
 public class InPlaceShiftArray {
 	public void inPlaceShift(int[] array, int k) {
-		if (array == null || array.length <= 1 || k == 0) return;
-		helper(array, k, 0);
+		if (array == null || array.length <= 1 || k%array.length == 0) return;
+		helper(array, array.length - k, 0);
 	}
 	private void helper(int[] array, int k, int start) {
 		int len = array.length - start;
@@ -24,6 +24,28 @@ public class InPlaceShiftArray {
 			helper(array, k, start + k);
 		} else {
 			helper(array, k - rem, start + rem);
+		}
+	}
+
+	public void inPlaceShift2(int[] array, int k) {
+		if (array == null || array.length <= 1 || k%array.length == 0) return;
+		int left = 0, right = array.length - 1;
+		while (right > left) {
+			int temp = array[left];
+			array[left++] = array[right];
+			array[right--] = temp;
+		}
+		left = 0; right = k - 1;
+		while (right > left) {
+			int temp = array[left];
+			array[left++] = array[right];
+			array[right--] = temp;
+		}
+		left = k; right = array.length - 1;
+		while (right > left) {
+			int temp = array[left];
+			array[left++] = array[right];
+			array[right--] = temp;
 		}
 	}
 	public static void main(String[] args) {
