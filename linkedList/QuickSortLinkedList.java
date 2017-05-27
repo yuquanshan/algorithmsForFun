@@ -1,5 +1,6 @@
 /**
-use quick sort to sort linked list list in O(nlogn) time and constant space complexity.
+* use quick sort to sort linked list list in O(nlogn) time and constant space complexity.
+* public ListNode sort(ListNode head)
 */
 
 // straightforward but convoluted, have to keep a clear mind 

@@ -1,6 +1,6 @@
 /**
-reverse a linked list.
-public ListNode reverse(ListNode head)
+* reverse a linked list.
+* public ListNode reverse(ListNode head)
 */
 
 public class ReverseLinkedList{

@@ -1,7 +1,7 @@
 /**
-in a linked list with duplicated elements, remove duplicated ones 
-so that each node has unique value.
-public static ListNode removeDup(ListNode head) 
+* in a linked list with duplicated elements, remove duplicated ones 
+* so that each node has unique value.
+* public static ListNode removeDup(ListNode head) 
 */
 
 public class RemoveDupInSortedList{

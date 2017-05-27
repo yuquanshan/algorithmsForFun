@@ -1,9 +1,10 @@
 /**
-given a linked list, reverse k nodes at a time, the left out nodes should remain 
-the original order. e.g.,
-1->2->3->4->5, if k = 2, should return 2->1->4->3->5.
-only constant memory is allowed.
-public static ListNode reverseK(ListNode head, int k)
+* given a linked list, reverse k nodes at a time, the left out nodes should remain 
+* the original order. e.g.,
+* 1->2->3->4->5, if k = 2, should return 2->1->4->3->5.
+* only constant memory is allowed.
+* public static ListNode reverseK(ListNode head, int k)
+* public ListNode reverseK(ListNode head, int k)
 */
 
 public class ReverseEveryKNodes{

@@ -1,8 +1,9 @@
 /**
-suppose there is a special linked list where its node contains two pointers,
-one is regular next pointer, the other is a random pointer which is pointing 
-to any node in the list or null.
-return a deep copy of the same list. 
+* suppose there is a special linked list where its node contains two pointers,
+* one is regular next pointer, the other is a random pointer which is pointing 
+* to any node in the list or null.
+* return a deep copy of the same list.
+* public RandomListNode copyWithRandPt(RandomListNode head) 
 */
 import java.util.*;
 

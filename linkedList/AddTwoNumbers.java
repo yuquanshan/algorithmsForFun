@@ -1,8 +1,9 @@
 /**
-assume numbers are expressed as linked lists, with least significant number 
-is the value of list head, e.g.,
-617: 7->1->6.
-get the sum of two numbers. 
+* assume numbers are expressed as linked lists, with least significant number 
+* is the value of list head, e.g.,
+* 617: 7->1->6.
+* get the sum of two numbers.
+* public static ListNode add(ListNode l1, ListNode l2) 
 */
 
 public class AddTwoNumbers{

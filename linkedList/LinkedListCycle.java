@@ -1,6 +1,6 @@
 /**
-given a linked list, determine if it has a cycle.
-public static boolean hasCycle(ListNode head)
+* given a linked list, determine if it has a cycle.
+* public static boolean hasCycle(ListNode head)
 */
 
 public class LinkedListCycle{

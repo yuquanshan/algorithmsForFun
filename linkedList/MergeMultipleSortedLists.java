@@ -1,5 +1,6 @@
 /**
-merge several sorted linked list and return it as one sorted list.
+* merge several sorted linked list and return it as one sorted list.
+* public ListNode mergeLists(List<ListNode> lists)
 */
 import java.util.*;
 public class MergeMultipleSortedLists{

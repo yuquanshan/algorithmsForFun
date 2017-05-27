@@ -1,5 +1,6 @@
 /**
-given a sorted linked list, remove the duplicated elements from it.
+* given a sorted linked list, remove the duplicated elements from it.
+* public ListNode removeDup(ListNode head)
 */
 
 public class RemoveDupInSortedLinkedList{

@@ -1,6 +1,6 @@
 /**
-check if a linked list is a palindrome.
-public static boolean isPalindrome(ListNode head)
+* check if a linked list is a palindrome.
+* public static boolean isPalindrome(ListNode head)
 */
 import java.util.*;
 

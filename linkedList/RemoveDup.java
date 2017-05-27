@@ -1,5 +1,6 @@
 /**
-if multiple nodes have the same value, keep the first one, remove the others.
+* if multiple nodes have the same value, keep the first one, remove the others.
+* public ListNode removeDup(ListNode head)
 */
 import java.util.*;
 

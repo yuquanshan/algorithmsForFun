@@ -1,5 +1,6 @@
 /**
-convert sorted list to balanced BST.
+* convert sorted list to balanced BST.
+* public TreeNode sortedListToBST(ListNode head)
 */
 
 public class ConvertSortedListToBST{

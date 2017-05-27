@@ -1,5 +1,6 @@
 /**
-Convert a BST to an ascending order doubly linked list.
+* Convert a BST to an ascending order doubly linked list.
+* public DoublyListNode bst2DoublyList(TreeNode root)
 */
 
 // a very general approach, you can do it even with singly list

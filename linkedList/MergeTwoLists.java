@@ -1,6 +1,6 @@
 /**
-merge two sorted linked list.
-ListNode merge(ListNode l1, ListNode l2)
+* merge two sorted linked list.
+* public ListNode merge(ListNode l1, ListNode l2)
 */
 
 public class MergeTwoLists{

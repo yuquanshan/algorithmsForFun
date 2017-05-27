@@ -1,5 +1,7 @@
 /**
-use merge sort to sort linked list list in O(nlogn) time and constant space complexity.
+* use merge sort to sort linked list list in O(nlogn) time and constant space 
+* complexity.
+* public ListNode mergeSort(ListNode head, int len)
 */
 
 public class MergeSortLinkedList{

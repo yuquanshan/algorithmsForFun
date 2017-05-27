@@ -1,9 +1,10 @@
 /**
-given a sorted linked list, remove *all* duplicated nodes from list.
-e.g.,
-1->1->2->3->3->4->4
-should be
-2
+* given a sorted linked list, remove *all* duplicated nodes from list.
+* e.g.,
+* 1->1->2->3->3->4->4
+* should be
+* 2
+* public ListNode removeAllDup(ListNode head)
 */
 
 public class RemoveAllDupInSortedLinkedList{

@@ -1,5 +1,6 @@
 /**
-in a linked list, remove all nodes with target value.
+* in a linked list, remove all nodes with target value.
+* public ListNode removeTar(ListNode head, int val)
 */
 
 public class RemoveNodesWithTargetValue{

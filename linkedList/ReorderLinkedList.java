@@ -1,6 +1,7 @@
 /**
-reorder an linked list L0 -> L1 -> L2 -> ... -> Ln-1 -> Ln
-to L0 -> Ln -> L1 -> Ln-1 -> ...
+* reorder an linked list L0 -> L1 -> L2 -> ... -> Ln-1 -> Ln
+* to L0 -> Ln -> L1 -> Ln-1 -> ...
+* public ListNode reorder(ListNode head)
 */
 import java.util.*;
 public class ReorderLinkedList{

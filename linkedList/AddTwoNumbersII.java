@@ -1,8 +1,9 @@
 /**
-numbers are presented in linked list as follows,
-617 => 6->1->7,
-add two numbers, return the result represented as linked list.
-public static ListNode add(ListNode l1, ListNode l2)
+* numbers are presented in linked list as follows,
+* 617 => 6->1->7,
+* add two numbers, return the result represented as linked list.
+* public static ListNode add(ListNode l1, ListNode l2)
+* public ListNode add(ListNode l1, ListNode l2)
 */
 
 public class AddTwoNumbersII{

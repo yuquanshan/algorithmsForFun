@@ -1,6 +1,7 @@
 /**
-rotate the linked list by k places, e.g.,
-given 1->2->3->4->5 and k=2, return 4->5->1->2->3.
+* rotate the linked list by k places, e.g.,
+* given 1->2->3->4->5 and k=2, return 4->5->1->2->3.
+* public ListNode rotateRight(ListNode head, int k)
 */
 
 public class RotateRight{

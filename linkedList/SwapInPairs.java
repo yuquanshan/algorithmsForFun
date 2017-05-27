@@ -1,6 +1,7 @@
 /**
-in a linked list, swap adjacent nodes in pairs, e.g.,
-1->2->3->4 should be 2->1->4->3.
+* in a linked list, swap adjacent nodes in pairs, e.g.,
+* 1->2->3->4 should be 2->1->4->3.
+* public ListNode swapInPairs(ListNode head)
 */
 
 public class SwapInPairs{

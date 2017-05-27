@@ -1,5 +1,6 @@
 /**
-find the middle node of linked list.
+* find the middle node of linked list.
+* public ListNode middle(ListNode head)
 */
 
 public class MiddleNode{

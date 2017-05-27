@@ -1,5 +1,6 @@
 /**
-given a linked list, remove the nth node from the end of the list.
+* given a linked list, remove the nth node from the end of the list.
+* public ListNode removeN(ListNode head, int n)
 */
 
 public class RemoveNthFromEnd{

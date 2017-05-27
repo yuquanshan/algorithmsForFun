@@ -1,6 +1,7 @@
 /**
-given a linked list which may contain a cycle, return the node where the cycle begins.
-return null if there is no cycle.
+* given a linked list which may contain a cycle, return the node where the cycle begins.
+* return null if there is no cycle.
+* public static ListNode returnHead(ListNode head)
 */
 
 public class ReturnCycleHead{

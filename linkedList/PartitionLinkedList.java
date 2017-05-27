@@ -1,6 +1,8 @@
 /**
-given a linked list, and a value of a node, x, make all node less than x come before nodes greater than or equal to x,
-preserve the order of original linked list.
+* given a linked list, and a value of a node, x, make all node less than x 
+* come before nodes greater than or equal to x, preserve the order of original 
+* linked list.
+* public ListNode partition(ListNode head, int x)
 */
 
 public class PartitionLinkedList{

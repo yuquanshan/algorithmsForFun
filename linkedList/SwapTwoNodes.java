@@ -1,7 +1,7 @@
 /**
-swap two nodes with values v1, v2, in a linked list.
-the linked list doesn't have duplicated nodes, and if there is no such lists do nothing.
-public static ListNodes swap(ListNode head, int v1, int v2)
+* swap two nodes with values v1, v2, in a linked list.
+* the linked list doesn't have duplicated nodes, and if there is no such lists do nothing.
+* public static ListNodes swap(ListNode head, int v1, int v2)
 */
 
 public class SwapTwoNodes{

@@ -1,5 +1,6 @@
 /**
-find nth node from end in the linked list.
+* find nth node from end in the linked list.
+* public ListNode findNtoEnd(ListNode head, int n)
 */
 
 public class FindNthFromEnd{
