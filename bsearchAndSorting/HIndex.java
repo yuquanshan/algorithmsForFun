@@ -14,6 +14,8 @@
 * (there is an array-based O(n) algorithm which is better than my original binary search algorithm
 * h index is the index where the number of paper whose citation is higher or equal than the value of 
 * that index)
+*
+* public int hIndex(int[] citations)
 */
 import java.util.*;
 
