@@ -10,6 +10,8 @@
 * public int reverse(int x)
 */
 
+import java.util.*;
+
 public class ReverseAnInteger {
 	public int reverse(int x) {
 		String str;
@@ -45,7 +47,7 @@ public class ReverseAnInteger {
 		return Integer.parseInt(sb.toString());
 	}
 
-	public int reverse2(int x){	// shorter solution with try-catch clause
+	public int reverse2(int x) {	// shorter solution with try-catch clause
 		String str = Integer.toString(x);
 		if (x < 0) str = str.substring(1);
 		StringBuilder sb = new StringBuilder();
@@ -61,9 +63,35 @@ public class ReverseAnInteger {
 		return res;
 	}
 
+	public int reverse3(int x) {
+		if (x == 0 || x == Integer.MIN_VALUE) return 0;
+		List<Integer> list = new ArrayList<Integer>();
+		int y = x >= 0?x:-x;
+		int len = 0;
+		while (y != 0) {
+			list.add(y%10);
+			y = y/10;
+			len++;
+		}
+		System.out.println(list);
+		int res = 0;
+		String max = Integer.toString(Integer.MAX_VALUE);
+		int offset = 0;
+		boolean alert = true;
+		for (int i: list) {
+			if (len == 10 && alert) {
+				if (max.charAt(offset) - '0' > i) alert = false;
+				else if (max.charAt(offset) - '0' < i) return 0;
+				offset++;
+			}
+			res = res*10+i;
+		}
+		return res;
+	}
+
 	public static void main(String[] args) {
 		ReverseAnInteger test = new ReverseAnInteger();
-		System.out.println(test.reverse2(100));
-		System.out.println(test.reverse2(-2147483412));
+		System.out.println(test.reverse3(100));
+		System.out.println(test.reverse3(-2147483412));
 	}
 }
