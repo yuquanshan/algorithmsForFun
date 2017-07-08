@@ -15,21 +15,19 @@ public class FindFirstMissingInteger {
 		int minpos = 0;
 		int pt = 0;
 		while (pt < nums.length) {
-			if (nums[pt] <= 0 || nums[pt] > nums.length) pt++;
+			if (nums[pt] <= 0 || nums[pt] > nums.length || 
+				nums[pt] == nums[nums[pt] - 1] /*in case of deadloop*/) pt++;
 			else {
 				if (nums[pt] == pt + 1) pt++;
 				else {
 					int tmp = nums[pt];
-					if (nums[pt] == nums[tmp - 1]) pt++; // in case of deadloop
-					else {
-						nums[pt] = nums[tmp - 1];
-						nums[tmp - 1] = tmp;
-					}
-				}
-				while (nums[minpos] == minpos + 1) {
-					minpos++;
-					if (minpos == nums.length) return minpos + 1;
-				}
+					nums[pt] = nums[tmp - 1];
+					nums[tmp - 1] = tmp;
+				}	
+			}
+			while (nums[minpos] == minpos + 1) {
+				minpos++;
+				if (minpos == nums.length) return minpos + 1;
 			}
 		}
 		return minpos + 1;
