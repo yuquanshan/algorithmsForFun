@@ -1,9 +1,9 @@
 /**
-* Given a partially filled Sudoku board,
-* check whether it is valid.
-*
-* public boolean isValidSudoku(char[][] board) {}
-*/
+ * Given a partially filled Sudoku board,
+ * check whether it is valid.
+ *
+ * public boolean isValidSudoku(char[][] board) {}
+ */
 import java.util.*;
 
 public class ValidSudoku {
