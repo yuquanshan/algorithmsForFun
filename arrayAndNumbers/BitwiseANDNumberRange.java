@@ -1,8 +1,8 @@
 /**
-* given a range of numbers from n to m
-* find the result of all those numbers bitwise AND together
-* public int andAllNums(int n, int m)
-*/
+ * given a range of numbers from n to m
+ * find the result of all those numbers bitwise AND together
+ * public int andAllNums(int n, int m)
+ */
 import java.util.*;
 
 public class BitwiseANDNumberRange {
