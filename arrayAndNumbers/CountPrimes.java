@@ -5,8 +5,10 @@
  *
  */
 
+import java.util.*;
+
 public class CountPrimes {
-	public int countPrimes(int n) {
+	public int countPrimes(int n) { 	// TLE solution
 		if (n < 2) return 0;
 		int[] array = new int[n];
 		int count = 0;
@@ -20,7 +22,7 @@ public class CountPrimes {
 	private boolean isPrime(int n, int[] array, int count) {
 		for (int i = 0; i < count; i++) {
 			if (n == array[i]*(n/array[i])) return false;
-			if (i*i > n) break;
+			if (array[i]*array[i] > n) break;
 		}
 		return true;
 	}
