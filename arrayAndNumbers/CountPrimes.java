@@ -26,6 +26,26 @@ public class CountPrimes {
 		}
 		return true;
 	}
+	public int countPrimes2(int n) { // Sieve of Eratosthenes
+		if (n <= 1) return 0;
+        boolean[] array = new boolean[n+1];
+		int i = 2;
+		int notp = 0;
+		while(i*i <= n - 1) {
+			if (!array[i]) {
+				int j = i;
+				while (i*j <= n -1) {
+					if (!array[i*j]) {
+						notp++;
+						array[i*j] = true;
+					}
+					j++;
+				}
+			}
+			i++;
+		}
+		return n - 2 - notp;
+	}
 	public static void main(String[] args) {
 		CountPrimes test = new CountPrimes();
 		System.out.println(test.countPrimes(1500000));
