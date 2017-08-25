@@ -19,24 +19,16 @@ public class GasStation {
 	public int canCompleteCircuit(int[] gas, int[] cost) {
 		if (gas == null || gas.length == 0) return -1;
 		int len = gas.length;
-		int[] surplus = new int[len];
-		for (int i = 0; i < len; i++) surplus[i] = gas[i] - cost[i];
 		int s = 0;	// start point
-		for (int i = 0; i < len; i++) {
-			if (surplus[i] >= 0) {
-				s = i;
-				break;
-			}
-		}
-		int sum = surplus[s];
+		int sum = gas[s] - cost[s];
 		int pt = (s + 1)%len;
 		while(s != pt) {
 			if (sum >= 0) {
-				sum += surplus[pt];
+				sum += gas[pt] - cost[pt];
 				pt = (pt + 1) % len;
 			} else {
 				s = (s - 1 + len) % len;
-				sum += surplus[s];
+				sum += gas[s] - cost[s];
 			}
 		}
 		if (sum >= 0) return s;
