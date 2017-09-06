@@ -36,6 +36,29 @@ public class CountCompleteTreeNodes {
 			return hasleaf(root.right, code, depth - 1);
 		}
 	}
+	// the solution with the same asymptotic complexity, but faster in that 
+	// depth each binary search will be decreased by one; don't need time to 
+	// decipher the code.
+	public int countNodes2(TreeNode root) {	
+		if (root == null) return 0;
+		int height = height(root);
+		return recursiveCount(root, height);
+	}
+	private int recursiveCount(TreeNode root, int height) {
+		if (root == null) return 0;
+		if (height == 0) return 1;
+		int tmp = height - 1;
+		TreeNode node = root.left;
+		while (tmp > 0) {
+			node = node.right;
+			tmp--;
+		}
+		if (node == null) {
+			return (1 << (height - 1)) + recursiveCount(root.left, height - 1);
+		} else {
+			return (1 << height) + recursiveCount(root.right, height - 1);
+		}
+	}
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode(1);
 		root.left = new TreeNode(2);
@@ -45,6 +68,6 @@ public class CountCompleteTreeNodes {
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
 		CountCompleteTreeNodes test = new CountCompleteTreeNodes();
-		System.out.println(test.countNodes(root));
+		System.out.println(test.countNodes2(root));
 	}
 }
