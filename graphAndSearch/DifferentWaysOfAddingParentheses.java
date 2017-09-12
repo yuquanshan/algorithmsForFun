@@ -26,22 +26,20 @@
 import java.util.*;
 
 public class DifferentWaysOfAddingParentheses {
-	public List<Integer> diffWaysToCompute(String input) {	// beat 25%
+	public List<Integer> diffWaysToCompute(String input) {	// beat 66%
 		List<Integer> res = new ArrayList<Integer>();
 		ArrayList<Character> ops = new ArrayList<Character>();
 		ArrayList<Integer> nums = new ArrayList<Integer>();
-		String tmp = "";
+		int tmp = 0;
 		for (int i = 0; i < input.length(); i++) {
 			char c = input.charAt(i);
 			if (c == '+' || c == '-' || c == '*') {
 				ops.add(c);
-				nums.add(Integer.parseInt(tmp));
-				tmp = "";
-			} else tmp += c;
+				nums.add(tmp);
+				tmp = 0;
+			} else tmp = tmp*10 + c - '0';
 		}
-		nums.add(Integer.parseInt(tmp));
-		System.out.println(nums.toString());
-		System.out.println(ops.toString());
+		nums.add(tmp);
 		return compRange(0, nums.size() - 1, ops, nums);
 	}
 	private List<Integer> compRange(int start, int end, List<Character> ops, 
