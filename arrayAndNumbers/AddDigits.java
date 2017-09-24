@@ -23,4 +23,7 @@ public class AddDigits {
 		}
 		return addDigits(tmp);
 	}
+	public int addDigits2(int num) {	// number theory: digit root
+		return num == 0?0:(1+(num-1)%9);
+	}
 }
