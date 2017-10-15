@@ -1,9 +1,9 @@
 /**
-* merge two sorted arrays, assume array A has m elements and 
-* n extra empty spaces, B has n elements.
-* public static void merge(int[] A, int m, int[] B, int n)
-* (didn't realize how to do that in place in the first time!)
-*/
+ * merge two sorted arrays, assume array A has m elements and 
+ * n extra empty spaces, B has n elements.
+ * public static void merge(int[] A, int m, int[] B, int n)
+ * (didn't realize how to do that in place in the first time!)
+ */
 import java.util.*;
 
 public class InPlaceMergeTwoSortedArray{
