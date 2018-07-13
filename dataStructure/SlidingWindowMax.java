@@ -24,33 +24,32 @@
 
 import java.util.*;
 
-public class SlidingWindowMax{
-	public static int[] maxSlidingWindow(int[] nums, int k) {
-		if(nums == null || nums.length == 0)
-            return new int[0];
-    	Deque<Integer> nqueue = new LinkedList<Integer>();
-    	Deque<Integer> pqueue = new LinkedList<Integer>();
-    	int[] res = new int[nums.length-k+1];
-    	for(int i = 0; i<nums.length; i++){
-    		while(!nqueue.isEmpty() && nqueue.peekLast() <= nums[i]){
-    			nqueue.removeLast();
-    			pqueue.removeLast();
-    		}
-			if(!pqueue.isEmpty() && pqueue.peekFirst() < i - k +1){
-				nqueue.removeFirst();
-				pqueue.removeFirst();
-			}
-			nqueue.addLast(nums[i]);
-    		pqueue.addLast(i);
-    		if(i+1-k>=0)
-    			res[i+1-k] = nqueue.peekFirst();
-    	}
-    	return res;
+public class SlidingWindowMax {
+  public static int[] maxSlidingWindow(int[] nums, int k) {
+    if(nums == null || nums.length == 0) return new int[0];
+    // the most recent number which is larger than the incoming number 
+    Deque<Integer> nqueue = new LinkedList<Integer>();
+    Deque<Integer> pqueue = new LinkedList<Integer>();
+    int[] res = new int[nums.length-k+1];
+    for(int i = 0; i<nums.length; i++){
+      while(!nqueue.isEmpty() && nqueue.peekLast() <= nums[i]){
+        nqueue.removeLast();
+        pqueue.removeLast();
+      }
+      if(!pqueue.isEmpty() && pqueue.peekFirst() < i - k + 1){
+        nqueue.removeFirst();
+        pqueue.removeFirst();
+      }
+      nqueue.addLast(nums[i]);
+      pqueue.addLast(i);
+      if(i+1-k>=0) res[i+1-k] = nqueue.peekFirst();
     }
-    public static void main(String[] args) {
-    	int[] nums = {1,3,-1,-3,5,3,6,7};
-    	int k = 3;
-    	int[] res = maxSlidingWindow(nums,k);
-    	System.out.println(Arrays.toString(res));
-    }
+    return res;
+  }
+  public static void main(String[] args) {
+    int[] nums = {1,3,-1,-3,5,3,6,7};
+    int k = 3;
+    int[] res = maxSlidingWindow(nums,k);
+    System.out.println(Arrays.toString(res));
+  }
 }
