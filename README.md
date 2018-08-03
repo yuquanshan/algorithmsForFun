@@ -1,1 +1,1 @@
-Pool of coding (algorithm) problems, written in Java, self-sufficient classes.
+Interesting algorithm questions written in Java and C++.
